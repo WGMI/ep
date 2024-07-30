@@ -354,6 +354,12 @@ ul,li{
 	float: right;
 }
 
+.gradient-background {
+	background: linear-gradient(to right, #000000, #cccccc);
+	height: 200px; /* Adjust the height as needed */
+	width: 100%; /* Adjust the width as needed */
+}
+
 .pull-left{
 	float: left;
 }
@@ -394,7 +400,7 @@ img{
 	background-size: cover;
 	z-index:999;
 	width:100%;
-	padding: 20px 20px 0;
+	padding: 0;
 }
 
 .main-header .header-top{
