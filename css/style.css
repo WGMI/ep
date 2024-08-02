@@ -2471,6 +2471,135 @@ img{
 }
 
 /*=== Product Block ===*/
+.prd_grid-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.prd_container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 16px;
+}
+
+.prd_flex-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.prd_image, .prd_text {
+	width: 100%;
+	max-width: 300px; /* Ensure it fits on phone screens */
+	height: 300px; /* Make the divs perfect squares */
+}
+
+.prd_title {
+	margin: 5px;
+	font-weight: 500;
+	font-size: 1em;
+}
+
+.prd_text {
+	background-color: #e9e9e9;
+}
+
+.prd_text p {
+	color: #0e0e0e;
+}
+
+.prd_image img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover; /* Crop the image if needed */
+}
+
+.prd_text {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	padding: 16px;
+	box-sizing: border-box; /* Ensure padding is included in the height calculation */
+}
+
+@media (min-width: 640px) {
+	.prd_flex-container {
+		flex-direction: row;
+	}
+
+	.prd_image, .prd_text {
+		width: 50%;
+		max-width: 300px; /* Ensure it fits on phone screens */
+		max-height: 300px; /* Make the divs perfect squares */
+		height: auto; /* Ensure the divs stay square */
+		aspect-ratio: 1/1; /* Maintain the aspect ratio */
+	}
+}
+
+.team_container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 16px;
+}
+
+.team_flex-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.team_image, .team_text {
+	width: 100%;
+	max-width: 600px; /* Ensure it fits on phone screens */
+	height: 600px; /* Make the divs perfect squares */
+}
+
+.team_title {
+	margin: 5px;
+	font-weight: 500;
+	font-size: 1em;
+}
+
+.team_text {
+	background-color: #e9e9e9;
+}
+
+.team_text p {
+	color: #0e0e0e;
+}
+
+.team_image img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover; /* Crop the image if needed */
+}
+
+.team_text {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	padding: 16px;
+	box-sizing: border-box; /* Ensure padding is included in the height calculation */
+}
+
+@media (min-width: 640px) {
+	.team_flex-container {
+		flex-direction: row;
+	}
+
+	.team_image, .team_text {
+		width: 50%;
+		max-width: 600px; /* Ensure it fits on phone screens */
+		max-height: 600px; /* Make the divs perfect squares */
+		height: auto; /* Ensure the divs stay square */
+		aspect-ratio: 1/1; /* Maintain the aspect ratio */
+	}
+}
 
 .product-block{
 	position: relative;
