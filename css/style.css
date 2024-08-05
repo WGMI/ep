@@ -1586,6 +1586,27 @@ img{
 	margin: 0 auto
 }
 
+.how-we-do-it {
+	flex: 1 1 270px;
+	margin: 10px;
+	box-sizing: border-box;
+	text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+	.text-center{
+		text-align: left !important;
+	}
+
+	.how-we-do-it{
+		text-align: left;
+	}
+
+	.extra-space{
+		margin-left: 20px;
+	}
+}
+
 .sec-title.light .text,
 .sec-title.light h2{
 	color: #ffffff;
@@ -2495,6 +2516,12 @@ img{
 	height: 300px; /* Make the divs perfect squares */
 }
 
+@media screen and (max-width: 600px) {
+	.prd_inner_text {
+		text-align: left !important;
+	}
+}
+
 .prd_title {
 	margin: 5px;
 	font-weight: 500;
@@ -2520,7 +2547,7 @@ img{
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	text-align: center;
+	text-align: left;
 	padding: 16px;
 	box-sizing: border-box; /* Ensure padding is included in the height calculation */
 }
@@ -2532,6 +2559,7 @@ img{
 
 	.prd_image, .prd_text {
 		width: 50%;
+		text-align: center;
 		max-width: 300px; /* Ensure it fits on phone screens */
 		max-height: 300px; /* Make the divs perfect squares */
 		height: auto; /* Ensure the divs stay square */
@@ -2582,9 +2610,14 @@ img{
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	text-align: center;
+	text-align: left;
 	padding: 16px;
 	box-sizing: border-box; /* Ensure padding is included in the height calculation */
+}
+
+.vertical-space {
+	margin-top: 20px;
+	margin-bottom: 20px;
 }
 
 @media (min-width: 640px) {
